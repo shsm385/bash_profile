@@ -1,0 +1,40 @@
+##                                                                              
+# Your previous /Users/admin/.bash_profile file was backed up as /Users/admin/.\bash_profile.macports-saved_2013-12-26_at_14:55:12                              
+##                                                                              
+
+
+##                                                                              
+# My own settings below                                                         
+# Copyright © 2014 TasukuTAKAHASHI All Rights Reserved.                         
+##                                                                              
+
+# Python                                                                        
+export PYTHONSTARTUP=~/.pystartup
+
+# Java                                                                          
+export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
+# export CLASSPATH=".:/usr/local/lib/antlr-4.3-complete.jar:$CLASSPATH"         
+
+# Terminal Color                                                                
+export PS1="\[\[\033[33;32m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+# Command changed                                                               
+alias ll="ls -l"
+alias la="ls -lA"
+alias h="history"
+
+# Aoki Code (Color)                                                             
+export TERM=xterm-color
+echo -e Welcome to "\033[1;31m`hostname`\033[0;39m", it\'s "\033[1;32m`date "+%\Y/%m/%d"`\033[0;39m" today, "\033[1;34m`date "+%H:%M:%S"`\033[0;39m" now.
+
+##                                                                              
+# End of .bash_profile                                                          
+##                                                                              
+
+
+# MacPorts Installer addition on 2013-12-26_at_14:55:12: adding an appropriate \PATH variable for use with MacPorts.                                            
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts. 
+
