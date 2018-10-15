@@ -1,0 +1,8 @@
+appcleaner      
+java            
+slack
+atom            
+docker          
+gimp            
+kindle          
+google-chrome           
