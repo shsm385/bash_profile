@@ -9,7 +9,13 @@
 ##                                                                              
 
 # Python                                                                        
-export PYTHONSTARTUP=~/.pystartup
+# export PYTHONSTARTUP=~/.pystartup
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # Java                                                                          
 export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
@@ -29,12 +35,17 @@ alias h="history"
 export TERM=xterm-color
 echo -e Welcome to "\033[1;31m`hostname`\033[0;39m", it\'s "\033[1;32m`date "+%\Y/%m/%d"`\033[0;39m" today, "\033[1;34m`date "+%H:%M:%S"`\033[0;39m" now.
 
-##                                                                              
-# End of .bash_profile                                                          
-##                                                                              
+# rbenc 
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+eval "$(rbenv init -)"
 
+# nodebrew
+NODEBREW_HOME=/usr/local/var/nodebrew/current
+export NODEBREW_HOME
+export NODEBREW_ROOT=/usr/local/var/nodebrew
 
-# MacPorts Installer addition on 2013-12-26_at_14:55:12: adding an appropriate \PATH variable for use with MacPorts.                                            
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts. 
+export PATH=$PATH:$NODEBREW_HOME/bin
 
+##
+# End of .bash_profile
+##
